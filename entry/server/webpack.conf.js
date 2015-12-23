@@ -10,7 +10,7 @@ module.exports = {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel', query: babelSettings, exclude: /node_modules/ },
       { test: /\.css$/, loader: 'css/locals?module&localIdentName=' + localIdentName },
-      { test: /\.scss$/, loader: 'style!css/locals!sass' },
+      { test: /\.scss$/, loader: 'css/locals!sass' },
       { test: /\.(png|jpe?g)(\?.*)?$/, loader: 'file' },
       { test: /\.(svg|ttf|woff|eot)(\?.*)?$/, loader: 'file' }
     ]
